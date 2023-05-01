@@ -25,6 +25,6 @@ public class MainActivity extends AppCompatActivity {
         recycler_view.setLayoutManager(new LinearLayoutManager(this));
         adapter = new RecyclerAdapter(this,monthNames);
         recycler_view.setAdapter(adapter);
-        TextView textView = findViewById(R.id.textView);
+        TextView textView = findViewById(R.id.textNames);
     }
 }

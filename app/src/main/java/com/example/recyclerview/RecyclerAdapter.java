@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
 
-    String data [] ;
+    String data []  ;
     Context context;
 
     public RecyclerAdapter( Context context,String[] data) {
@@ -32,8 +32,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerAdapter.ViewHolder holder, int position) {
-
-
+//        String monthNames ;
+//         data= monthNames;
+//         System.out.println(data);
         holder.textView.setText(data[position]);
         holder.textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +55,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         public ViewHolder(@NonNull View itemView) {
 
             super(itemView);
-            textView= itemView.findViewById(R.id.textView);
+            textView= itemView.findViewById(R.id.textNames);
         }
     }
 }
